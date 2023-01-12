@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-
 @RestController
 @RequestMapping("/tweet")
 public class TweetController {
@@ -26,8 +25,6 @@ public class TweetController {
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     public void setTweet(@RequestBody Object tweet) {
-        System.out.println(tweet);
         obj.setTweet(tweet);
     }
-        
 }
